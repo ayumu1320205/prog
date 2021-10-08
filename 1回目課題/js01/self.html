@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>あゆむの自己紹介</title>
+    <style>
+        body{
+            background-color: #789876;
+            font-size: 0.9rem;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            max-width: 100%;
+        }
+        li{
+            list-style: none;
+        }
+
+.site-title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+.site-title a {
+  display: block;
+}
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #f1fce6;
+}
+.content-title {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+/*-------------------------------------------
+Top picture
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+#about .text {
+  text-align: left;
+}
+
+/*-------------------------------------------
+Pet
+-------------------------------------------*/
+#mypet ul {
+  display: flex;
+  justify-content: space-between;
+}
+#mypet li {
+  width: 20%;
+  margin-bottom: 30px;
+}
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+</head>
+
+<body>
+    <header id="header" class="wrapper">
+    
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mypet">My pet</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+  
+      <main>
+        <div id="mainvisual">
+          <img src="IMG_3853.jpg" alt="mikemikemike">
+        </div>
+  
+        <section id="about" class="wrapper">
+          <h2 class="section-title">About</h2>
+          <div class="content">
+            <img src="1632051807247.jpg" alt="a">
+            <div class="text">
+              <h3 class="content-title">安西歩夢</h3>
+              <p>
+                大妻女子大学社会情報学部情報デザイン専攻2年B組<br>
+                2001年11月4日産まれ神奈川県出身<br>
+                趣味は読書と旅行<br>
+                バイトはスポーツジムとたまに神社
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <section id="mypet" class="wrapper">
+          <h2 class="section-title">My pet</h2>
+          <ul>
+            <li>
+              <img src="MIKE01.JPG" alt="mikemikemike">
+              
+              <p>来て間もない時の写真<br>
+                 手のひらサイズ
+              </p>
+            </li>
+            <li>
+              <img src="MIKE02.jpg" alt="mikemikemike">
+              
+              <p>家に来て1週間の写真<br>
+                 ゲージから初めて出る日
+              </p>
+            </li>
+            <li>
+              <img src="MIKE03.jpg" alt="mikemikemike">
+              
+              <p>家に来て1か月後</p>
+            </li>
+          </ul>
+        </section>
+      </main>
+  
+      <footer id="footer">
+        <p>2021 Ayumu Profile</p>
+      </footer>
+</body>
+</html>
