@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>じゃんけん</title>
+<style>
+  body{
+      font-family: HG行書体;
+      
+  }
+  
+  </style>
+</head>
+<body>
+  
+
+<header>
+  <h1>じゃんけん</h1>
+</header>
+
+<main>
+  <ul>
+    <li id="gu_btn">ぐー</li>
+    <li id="cho_btn">ちょき</li>
+    <li id="par_btn">ぱー</li>
+  </ul>
+  <div>コンピュータの出した手は？</div>
+  <div>「<span id="pc_hands">なに？</span>」</div>
+  <p><div id="judgment">結果</div></p>
+
+</main>
+
+<footer>二〇二一年一〇月三〇日</footer>
+<script>
+  $("#judgment").css("text-align","center");
+  $("#judgment").css("font-size","60px");
+
+//じゃんけん用のSCRIPTを書いてください
+  $("#gu_btn").on("click", function(){
+    $("#pc_hands").html("ぐー");
+    const num = Math.ceil(Math.random() * 3);
+    if(num == 1){
+      $("#pc_hands").html("ぐー");
+      $("#judgment").html("引き分け");
+      
+    }
+    if(num == 2){
+      $("#pc_hands").html("ちょき");
+      $("#judgment").html("あなたの勝ち");
+      
+    }
+    if(num == 3){
+    $("#pc_hands").html("ぱー");
+    $("#judgment").html("あなたの負け");
+    
+    }
+
+  });
+
+  $("#cho_btn").on("click", function(){
+    const num = Math.ceil(Math.random() * 3);
+    if(num == 1){
+      $("#pc_hands").html("ぐー");
+      $("#judgment").html("あなたの負け");
+      
+    }
+  if(num == 2){
+    $("#pc_hands").html("ちょき");
+    $("#judgment").html("引き分け");
+    
+  }
+  if(num == 3){
+    $("#pc_hands").html("ぱー");
+    $("#judgment").html("あなたの勝ち");
+    
+  }
+
+});
+
+$("#par_btn").on("click", function(){
+  const num = Math.ceil(Math.random() * 3);
+  if(num == 1){
+    $("#pc_hands").html("ぐー");
+    $("#judgment").html("あなたの勝ち");
+    
+  }
+  if(num == 2){
+    $("#pc_hands").html("ちょき");
+    $("#judgment").html("あなたの負け");
+    
+  }
+  if(num == 3){
+    $("#pc_hands").html("ぱー");
+    $("#judgment").html("引き分け");
+    
+  }
+
+});    
+    
+    
+    
+    
+    
+    
+
+</script>
+</body>
+</html>
