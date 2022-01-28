@@ -1,0 +1,56 @@
+
+
+html {
+    
+    box-sizing: border-box;
+    
+}
+
+body{
+    /* font-family: 'DotGothic16', sans-serif; */
+    font-family:  "Tsukushi A Round Gothic","筑紫A丸ゴシック"; font-weight: bold;
+  color: rgb(252, 252, 252);
+  background-color: rgb(39, 39, 41);
+}
+
+header {
+    position: relative;
+    height: 35vh;
+    /* border-bottom: 10px solid rgb(255, 255, 255); */
+}
+
+main {
+    height: 10vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .secretNumber {
+    background: #eee;
+    color: #333;
+    font-size: 5rem;
+    width: 10rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .reset { 
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .btn:hover {
+    background-color: #ccc;
+  }
+
+  .label-score {
+    margin-bottom: 1rem;
+  }
+
+  
